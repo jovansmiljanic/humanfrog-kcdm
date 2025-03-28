@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #4bac87;
+  --color-secondary: #f2f1ee;
+  --color-dark-green: #222e29;
+  --color-light-gray: #737a77;
+  --color-lighter-gray: #d8d7d3;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --tracking-2: 5px;
+  --font-size-base: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f2f1ee;
+    --foreground: #4bac87;
+    --primary: #4bac87;
+    --dark-green: #318565;
+    --darker-green: #222e29;
+    --secondary: #cccccc;
   }
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-base);
+}
+
+.after-image::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/humanfrog.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  vertical-align: middle;
 }

@@ -1,6 +1,14 @@
+// Core
 import type { Metadata } from "next";
+
+// Global css
 import "./globals.css";
+
+// Vendors
 import localFont from "next/font/local";
+
+// Global components
+import { Layout } from "@/components";
 
 const verb = localFont({
   src: [
@@ -10,11 +18,22 @@ const verb = localFont({
       style: "normal",
     },
     {
+      path: "./font/Verb-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
       path: "./font/Verb-Ultra.woff2",
       weight: "700",
-      style: "bold",
+      style: "normal",
+    },
+    {
+      path: "./font/Verb-Ultra.woff",
+      weight: "700",
+      style: "normal",
     },
   ],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +48,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={verb.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+      </head>
+
+      <body className={verb.className}>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }
