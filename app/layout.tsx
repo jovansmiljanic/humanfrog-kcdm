@@ -50,6 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32" />
+        <link rel="stylesheet" href="https://use.typekit.net/twe0rsg.css" />
       </head>
 
       <body className={verb.className}>

@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div className="min-h-screen">Hello World!</div>;
+import { Aktualno } from "@/components/aktualno";
+
+export default function Page() {
+  return <Aktualno />;
 }

@@ -3,9 +3,13 @@
 @theme {
   --color-primary: #4bac87;
   --color-secondary: #f2f1ee;
+
   --color-dark-green: #222e29;
+  --color-lighter-green: #318565;
   --color-light-gray: #737a77;
   --color-lighter-gray: #d8d7d3;
+
+  --font-georgia: "georgiapro", sans-serif;
 }
 
 :root {
@@ -20,9 +24,6 @@
   :root {
     --background: #f2f1ee;
     --foreground: #4bac87;
-    --primary: #4bac87;
-    --dark-green: #318565;
-    --darker-green: #222e29;
     --secondary: #cccccc;
   }
 }
@@ -43,4 +44,16 @@ body {
   background-repeat: no-repeat;
   margin-left: 5px;
   vertical-align: middle;
+}
+
+.active::before {
+  content: "";
+  height: 100%;
+  width: 6px;
+  background-color: var(--color-primary);
+  display: inline-block;
+
+  position: absolute;
+  top: 0;
+  left: -20px;
 }
