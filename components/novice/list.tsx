@@ -1,8 +1,11 @@
 "use client";
 
+// Core
+import { useMemo } from "react";
+// Vendors
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useMemo } from "react";
+// Local components
 import { Pagination } from "./pagination";
 
 type NewsItem = {

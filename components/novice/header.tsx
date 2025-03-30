@@ -1,3 +1,6 @@
+"use client";
+
+// Vendors
 import Link from "next/link";
 
 export const Header = () => {

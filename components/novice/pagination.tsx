@@ -1,3 +1,5 @@
+"use client";
+
 type TPaginationProps = {
   currentPage: number;
   totalPages: number;
