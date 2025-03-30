@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div className="bg-primary w-full h-50 grid md:grid-cols-[230px_160px_1fr] pt-7 items-start px-5 md:px-0">
       <Link
-        href="/aktualno"
+        href="/"
         className="text-white hidden md:flex md:items-center gap-3 uppercase font-extrabold pl-5"
       >
         <svg
