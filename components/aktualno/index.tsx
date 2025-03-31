@@ -30,12 +30,15 @@ export const Aktualno = () => {
         <div className="flex-col gap-2.5 pl-16 pr-7 hidden md:flex">
           {links.map(({ label, href }) => {
             const isActive = pathname === href;
+
             return (
               <Link
                 key={label}
                 href={href}
                 className={`font-extrabold text-primary uppercase hover:text-lighter-green border-b border-lighter-gray pt-2.5 pb-2.5 relative ${
-                  isActive ? "text-lighter-green" : ""
+                  isActive
+                    ? "text-lighter-green border-lighter-green border-l-4"
+                    : ""
                 }`}
               >
                 {label}

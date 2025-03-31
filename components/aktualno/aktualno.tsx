@@ -49,7 +49,7 @@ export const AktualnoSection = () => {
 
       <div className="pt-3">
         <Link
-          href="#"
+          href="/novice"
           className="flex items-center gap-2 uppercase underline decoration-dotted"
         >
           več novic{" "}
